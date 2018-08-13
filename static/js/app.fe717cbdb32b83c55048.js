@@ -1,2 +1,0 @@
-webpackJsonp([0],[function(n,e,o){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var t=o(1),a=(o.n(t),o(3)),c=(o.n(a),o(4));o.n(c)},function(n,e){},,function(n,e){},function(n,e){var o=document.getElementById("colorTab"),t=document.getElementById("fontTab"),a=function(){window.location.pathname.indexOf("colorpage")>-1?o.className+="active":window.location.pathname.indexOf("fontpage")>-1&&(t.className+="active")};window.onload=a}],[0]);
-//# sourceMappingURL=app.fe717cbdb32b83c55048.js.map
