@@ -1,0 +1,137 @@
+/*
+OSC - COLOR
+v 1.0.5
+date: 2018. 08. 17
+*/
+
+$primary_array: (
+  '0': #228BE6,
+  '900': #0F4AA2,
+  '800': #1868C1,
+  '700': #1C79D3,
+  '600': #228BE6,
+  '500': #2699F4,
+  '400': #45A8F6,
+  '300': #66B7F7,
+  '200': #91CCF9,
+  '100': #BCDFFB,
+  '50': #E3F2FD,
+);
+$secondary_array: (
+  '0': #1B2535,
+  '900': #1B2535,
+  '800': #2D384C,
+  '700': #3C4A62,
+  '600': #4D5D78,
+  '500': #5A6A89,
+  '400': #717F9B,
+  '300': #8995AE,
+  '200': #A9B3C8,
+  '100': #C8D2E3,
+  '50': #E8ECFA,
+);
+$error_array: (
+  '200': #ffa8a8,
+  '500': #ff6d6d,
+  '800': #f03e3e
+);
+$inProgress_array: (
+  '200': #ffe066,
+  '500': #fcc419,
+  '800': #f59f00
+);
+$completed_array: (
+  '200': #91ccf9,
+  '500': #228be6,
+  '800': #1868c1
+);
+$reserved_array: (
+  '200': #63e6be,
+  '500': #20c997,
+  '800': #0ca678
+);
+$canceled_array: (
+  '200': #b197fc,
+  '500': #845ef7,
+  '800': #7048e8
+);
+$crediential_array: (
+  '1': #ec008c,
+  '2': #ec4300,
+  '3': #502bbe,
+  '4': #199d6d,
+  '5': #0098b8,
+  '6': #ff9c00,
+);
+
+$pageMainColor: #2992E5;
+$fontColorBlack: #3B3F43;
+// Surface
+$surface: #F6F8FD;
+$light: #FFFFFF;
+$dark: #E3E5EA;
+// Surface Text Emphasis
+$surfaceEp: #F5F7FC;
+// Primary
+$primary: map-get($primary_array, '0');
+$primary-900: map-get($primary_array, '900');
+$primary-800: map-get($primary_array, '800');
+$primary-700: map-get($primary_array, '700');
+$primary-600: map-get($primary_array, '600');
+$primary-500: map-get($primary_array, '500');
+$primary-400: map-get($primary_array, '400');
+$primary-300: map-get($primary_array, '300');
+$primary-200: map-get($primary_array, '200');
+$primary-100: map-get($primary_array, '100');
+$primary-50: map-get($primary_array, '50');
+// Primary Text Emphasis
+$primaryEp: #3980DA;
+// Primary Black Text
+$primaryBlackTEm: #E2EFFB;
+// Primary White Text
+$primaryWhiteTEm: #1D4292;
+// Secondary
+$secondary: map-get($secondary_array, '0');
+$secondary-900: map-get($secondary_array, '900');
+$secondary-800: map-get($secondary_array, '800');
+$secondary-700: map-get($secondary_array, '700');
+$secondary-600: map-get($secondary_array, '600');
+$secondary-500: map-get($secondary_array, '500');
+$secondary-400: map-get($secondary_array, '400');
+$secondary-300: map-get($secondary_array, '300');
+$secondary-200: map-get($secondary_array, '200');
+$secondary-100: map-get($secondary_array, '100');
+$secondary-50: map-get($secondary_array, '50');
+// Secondary Text Emphasis
+$secondaryEp: #1B212D;
+// Secondary Black Text
+$secondaryBlackTEm: #E5E9F7;
+// Secondary White Text
+$secondaryWhiteTEm: #1B212D;
+// Error
+$error-200: map-get($error_array, '200');
+$error-500: map-get($error_array, '500');
+$error-800: map-get($error_array, '800');
+// In Progress
+$inProgress-200: map-get($inProgress_array, '200');
+$inProgress-500: map-get($inProgress_array, '500');
+$inProgress-800: map-get($inProgress_array, '800');
+// Completed
+$completed-200: map-get($completed_array, '200');
+$completed-500: map-get($completed_array, '500');
+$completed-800: map-get($completed_array, '800');
+// Reserved
+$reserved-200: map-get($reserved_array, '200');
+$reserved-500: map-get($reserved_array, '500');
+$reserved-800: map-get($reserved_array, '800');
+// Canceled
+$canceled-200: map-get($canceled_array, '200');
+$canceled-500: map-get($canceled_array, '500');
+$canceled-800: map-get($canceled_array, '800');
+// Crediential
+$crediential-1: map-get($crediential_array, '1');
+$crediential-2: map-get($crediential_array, '2');
+$crediential-3: map-get($crediential_array, '3');
+$crediential-4: map-get($crediential_array, '4');
+$crediential-5: map-get($crediential_array, '5');
+$crediential-6: map-get($crediential_array, '6');
