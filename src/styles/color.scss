@@ -1,4 +1,4 @@
-// Last revision : 2018. 08. 01.
+// Last revision : 2018. 08. 17.
 @mixin rowLayout {
   flex-direction: column;
   position: relative;
@@ -53,26 +53,26 @@
   }
   .Surface {
     &:hover {
-      color: $Surface;
+      color: $surface;
     }
     &::before {
-      background-color: $Surface;
+      background-color: $surface;
     }
   }
   .Primary {
     &:hover {
-      color: $Primary;
+      color: $primary;
     }
     &::before {
-      background-color: $Primary;
+      background-color: $primary;
     }
   }
   .Secondary {
     &:hover {
-      color: $Secondary;
+      color: $secondary;
     }
     &::before {
-      background-color: $Secondary;
+      background-color: $secondary;
     }
   }
   .EtcColor {
@@ -98,16 +98,16 @@ section {
     @include rowLayout;
     // Surface
     .surface {
-      background-color: $Surface;
+      background-color: $surface;
       color: $fontColorBlack;
     }
     .light {
-      background-color: $Light;
+      background-color: $light;
       color: $fontColorBlack;
       height: 50px;
     }
     .dark {
-      background-color: $Dark;
+      background-color: $dark;
       color: $fontColorBlack;
       height: 50px;
     } // Surface Text Emphasis
@@ -129,7 +129,7 @@ section {
       }
     } // Primary
     .primary {
-      background-color: $Primary;
+      background-color: $primary;
       color: $fontColorBlack;
     }
     .primary900 {
@@ -231,7 +231,7 @@ section {
       }
     } // Secondary
     .secondary {
-      background-color: $Secondary;
+      background-color: $secondary;
       color: #FFFFFF;
     }
     .secondary900 {

@@ -1,14 +1,16 @@
-const _colorTab = document.getElementById('colorTab')
-const colorPath = 'colorpage'
-const _fontTab = document.getElementById('fontTab')
-const fontPath = '/osc-style/fontpage.html'
+const colorTab = document.getElementById('colorpage')
+const fontTab = document.getElementById('fontpage')
+
+// document.getElementsByClassName('Header__topbar')[0].getElementsByTagName('a')[0].id
 
 const _handleClick = () => {
-  if (window.location.pathname.indexOf(colorPath) > -1) {
-    _colorTab.className += 'active'
-  } else if (window.location.pathname === fontPath) {
-    _fontTab.className += 'active'
+  if (window.location.pathname.indexOf(colorTab.id) > -1) {
+    colorTab.className += 'active'
+  } else if (window.location.pathname.indexOf(fontTab.id) > -1) {
+    fontTab.className += 'active'
   }
+  console.log(colorTab.id)
+  console.log(fontTab.id)
 }
 
 window.onload = _handleClick
