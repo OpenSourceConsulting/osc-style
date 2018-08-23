@@ -1,7 +1,7 @@
 head
 	block title
-	title #{title} - Webpack
-	base(href="/osc-style/")
+	title= 'osc style'
+	base(href= htmlWebpackPlugin.options.baseUrl)
 	meta(charset="UTF-8")
 	meta(name="viewport", content="width=device-width, initial-scale=1.0")
 	meta(http-equiv="X-UA-Compatible", content="ie=edge")

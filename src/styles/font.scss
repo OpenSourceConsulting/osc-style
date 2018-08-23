@@ -5,77 +5,57 @@
   height: 70px;
 }
 
-;
 .fontBox {
-  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
   .fontH1 {
     @include lineMiddle;
     height: 100px;
-    font-weight: bold;
-    font-size: 55px;
   }
   .h1Small {
     height: 100px;
   }
   .fontH2 {
     @include lineMiddle;
-    font-weight: bold;
-    font-size: 36px;
   }
   .fontH3 {
     @include lineMiddle;
-    font-size: 36px;
   }
   .fontH4 {
     @include lineMiddle;
-    font-size: 30px;
   }
   .fontH5 {
     @include lineMiddle;
-    font-size: 24px;
-    font-weight: bold;
   }
   .fontH6 {
     @include lineMiddle;
-    font-size: 24px;
   }
   .fontH7 {
     @include lineMiddle;
-    font-size: 20px;
   }
   .fontH8 {
     @include lineMiddle;
-    font-size: 18px;
   }
   .fontS1 {
     @include lineMiddle;
-    font-size: 16px;
     height: 50px;
   }
   .fontS2 {
     @include lineMiddle;
-    font-size: 14px;
     height: 50px;
   }
   .fontB1 {
     @include lineMiddle;
-    font-size: 14px;
     height: 50px;
   }
   .fontB2 {
     @include lineMiddle;
-    font-size: 12px;
-    font-weight: bold;
     height: 50px;
   }
   .fontB3 {
     @include lineMiddle;
-    font-size: 12px;
     height: 50px;
   }
   .fontC1 {
     @include lineMiddle;
-    font-size: 10px;
     height: 50px;
   }
 }

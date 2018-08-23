@@ -1,4 +1,7 @@
 var path = require('path')
+// const webpack = require('webpack') // to access built-in plugins
+// const HtmlWebpackPlugin = require('html-webpack-plugin')
+// const { BaseHrefWebpackPlugin } = require('base-href-webpack-plugin')
 
 module.exports = {
   build: {
@@ -24,6 +27,7 @@ module.exports = {
   dev: {
     env: require('./dev.env'),
     port: 8080,
+    publicPath: '/',
     autoOpenBrowser: true,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',

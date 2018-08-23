@@ -2,34 +2,48 @@
 @mixin rowLayout {
   flex-direction: column;
   position: relative;
-};
+}
+
+;
 @mixin titleColorLayout {
   width: 100%;
   position: absolute;
   top: 0;
-};
+}
+
+;
 @mixin textLower {
   position: relative;
   top: 100px;
-};
+}
+
+;
 @mixin nameLeft {
   margin: 15px 15px;
   display: inline-block;
-};
+}
+
+;
 @mixin codeRight {
   float: right;
   position: relative;
   right: 25px;
   top: 15px;
-};
+}
+
+;
 @mixin emLeft {
   margin: 15px 15px;
   display: block;
   line-height: 2;
-};
+}
+
+;
 .navColorBox {
   height: 25px;
   text-align: center;
+  justify-content: space-around;
+  position: relative;
   &::before {
     content: "";
     position: absolute;
@@ -92,10 +106,38 @@
     }
   }
 }
+
 section {
-  padding: 50px 0;
+  &#Surface {
+    .row {
+      @include rowLayout;
+    }
+  }
+  &#Primary {
+    .row {
+      @include rowLayout;
+    }
+  }
+  &#Secondary {
+    .row {
+      @include rowLayout;
+    }
+  }
+  &#EtcColor {
+    .row {
+      @include rowLayout;
+    }
+  }
+  &#Crediential {
+    .row {
+      @include rowLayout;
+    }
+  }
+}
+
+section {
+  padding: 25px 0;
   .row {
-    @include rowLayout;
     // Surface
     .surface {
       background-color: $Surface;
@@ -441,7 +483,6 @@ section {
     }
   }
 }
-
 
 .name {
   @include nameLeft;

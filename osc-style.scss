@@ -69,3 +69,74 @@ $crediential-3: #502bbe;
 $crediential-4: #199d6d;
 $crediential-5: #0098b8;
 $crediential-6: #ff9c00;
+/*
+-----------------------------------------------------------------------------
+Typography
+*/
+
+html {
+  @extend .body-1;
+  * {
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+  }
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 55px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 24px;
+}
+
+h7 {
+  font-size: 20px;
+}
+
+h8 {
+  font-size: 18px;
+}
+
+.subtitle-1 {
+  font-size: 16px;
+}
+
+.subtitle-2 {
+  font-size: 14px;
+}
+
+.body-1 {
+  font-size: 14px;
+}
+
+.body-2 {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.body-3 {
+  font-size: 12px;
+}
+
+.caption {
+  font-size: 10px;
+}

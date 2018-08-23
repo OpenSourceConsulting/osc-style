@@ -5,151 +5,136 @@ block append head
 
 block content
 	include ../components/header.pug
-	.container
-		.row
-			.col.title
-				h1.headerH1 FONT
-				small.headerSmall Last revision : 2018. 08. 01.
-	.container.fontBox
-		.row
-			.col-2
-				.fontH1 H1
-			|       
-			.col-7
-				.fontH1 SpoqaHanSans Bold 55
-			|       
-			.col
-				.rightSmall.h1Small Home &gt; Count
-		|     
-		.row
-			.col-2
-				.fontH2 H2
-			|       
-			.col-7
-				.fontH2 SpoqaHanSans Bold 36
-			|       
-			.col
-				small.rightSmall Mirration Wizard btn
-		|     
-		.row
-			.col-2
-				.fontH3 H3
-			|       
-			.col-7
-				.fontH3 SpoqaHanSans Regular 36
-			|       
-			.col
-				small.rightSmall Mirration Wizard time / count
-		|     
-		.row
-			.col-2
-				.fontH4 H4
-			|       
-			.col-7
-				.fontH4 SpoqaHanSans Regular 30
-			|       
-			.col
-				small.rightSmall landing Infomation page Title
-		|     
-		.row
-			.col-2
-				.fontH5 H5
-			|       
-			.col-7
-				.fontH5 SpoqaHanSans Bold 24
-			|       
-			.col
-				small.rightSmall mail form title
-		|     
-		.row
-			.col-2
-				.fontH6 H6
-			|       
-			.col-7
-				.fontH6 SpoqaHanSans Regular 24
-			|       
-			.col
-				small.rightSmall Dialog box title / Detail Page title
-		|     
-		.row
-			.col-2
-				.fontH7 H7
-			|       
-			.col-7
-				.fontH7 SpoqaHanSans Regular 20
-			|       
-			.col
-				small.rightSmall langing Infomation page user email
-		|     
-		.row.fontLast
-			.col-2
-				.fontH8 H8
-			|       
-			.col-7
-				.fontH8 SpoqaHanSans Regular 18
-			|       
-			.col
-				small.rightSmall Dialog box body text
-		|     
-		.row
-			.col-2
-				.fontS1 Subtitle 1
-			|       
-			.col-7
-				.fontS1 SpoqaHanSans Regular 16
-			|       
-			.col
-				small.rightSmall.subSmall Menu 1 depth text
-		|     
-		.row.fontLast
-			.col-2
-				.fontS2 Subtitle 2
-			|       
-			.col-7
-				.fontS2 SpoqaHanSans Regular 14
-			|       
-			.col
-				small.rightSmall.subSmall Menu 2 - 3 depth text / Submenu 1depth text Tab menu title
-		|     
-		.row
-			.col-2
-				.fontB1 Body 1
-			|       
-			.col-7
-				.fontB1 SpoqaHanSans Regular 14
-			|       
-			.col
-				small.rightSmall.subSmall input title / table text / btn text / mail form
-		|     
-		.row
-			.col-2
-				.fontB2 Body 2
-			|       
-			.col-7
-				.fontB2 SpoqaHanSans Bold 12
-			|       
-			.col
-				small.rightSmall.subSmall status counter / mail form link
-		|     
-		.row.fontLast
-			.col-2
-				.fontB3 Body 3
-			|       
-			.col-7
-				.fontB3 SpoqaHanSans Regular 12
-			|       
-			.col
-				small.rightSmall.subSmall input active title / intance message / status / pagination
-		|     
-		.row.fontLast
-			.col-2
-				.fontC1 Caption
-			|       
-			.col-7
-				.fontC1 SpoqaHanSans Regular 10
-			|       
-			.col
-				small.rightSmall.subSmall Location / Footer
+	section.title
+		.container
+			.row
+				.col
+					h1.headerH1 FONT
+					small.headerSmall Last revision : 2018. 08. 23.
 
-	
+	<hr/>
+
+	section#headTitle
+		.container
+			.row
+				.col-sm-12
+					h3 HeadLine
+					p h1 에서 h8 까지 지원하며, 본문의 제목이 되는 텍스트들에 사용해야 합니다.
+					b Example : 
+					.example
+						pre
+							code.html &lt;h1&gt;Your Text Here&lt;/h1&gt;
+
+				.col-sm-2
+					h1.fontH1 H1
+				.col-sm-7
+					h1.fontH1 SpoqaHanSans Bold 55
+				.col-sm-3
+					.rightSmall.h1Small Home &gt; Count
+				.col-2
+					h2.fontH2 H2
+				.col-7
+					h2.fontH2 SpoqaHanSans Bold 36
+				.col-3
+					small.rightSmall Mirration Wizard btn
+				.col-2
+					h3.fontH3 H3
+				.col-7
+					h3.fontH3 SpoqaHanSans Regular 36
+				.col-3
+					small.rightSmall Mirration Wizard time / count
+				.col-2
+					h4.fontH4 H4
+				.col-7
+					h4.fontH4 SpoqaHanSans Regular 30
+				.col-3
+					small.rightSmall landing Infomation page Title
+				.col-2
+					h5.fontH5 H5
+				.col-7
+					h5.fontH5 SpoqaHanSans Bold 24
+				.col-3
+					small.rightSmall mail form title
+				.col-2
+					h6.fontH6 H6
+				.col-7
+					h6.fontH6 SpoqaHanSans Regular 24
+				.col-3
+					small.rightSmall Dialog box title / Detail Page title
+				.col-2
+					h7.fontH7 H7
+				.col-7
+					h7.fontH7 SpoqaHanSans Regular 20
+				.col-3
+					small.rightSmall langing Infomation page user email
+				.col-2
+					h8.fontH8 H8
+				.col-7
+					h8.fontH8 SpoqaHanSans Regular 18
+				.col-3
+					small.rightSmall Dialog box body text
+
+	<hr/>
+
+	section#subTitle
+		.container
+			.row
+				.col-sm-12
+					h3 SubTitle
+					p Headline의 하단에 위치하며, 보다 설명이 필요한 텍스트에 사용됩니다.
+					b Example : 
+					.example
+						pre
+							code.html &lt;div class="subtitle-1"&gt;Your Text Here&lt;/div&gt;
+				.col-2
+					.subtitle-1.fontS1 Subtitle 1
+				.col-7
+					.fontS1 SpoqaHanSans Regular 16
+				.col-3
+					small.rightSmall.subSmall Menu 1 depth text
+				.col-2
+					.subtitle-2.fontS2 Subtitle 2
+				.col-7
+					.fontS2 SpoqaHanSans Regular 14
+				.col-3
+					small.rightSmall.subSmall Menu 2 - 3 depth text / Submenu 1depth text Tab menu title
+
+	<hr/>
+
+	section#etcFont
+		.container
+			.row
+				.col-sm-12
+					h3 Default Fonts
+					p 기본적으로 사용되는 폰트이며, body 1 크기가 기본 사이즈입니다.
+					b Example : 
+					.example
+						pre
+							code.html &lt;p class="body-1"&gt;Your Text Here&lt;/p&gt;
+				.col-2
+					.body-1.fontB1 Body 1
+				.col-7
+					.fontB1 SpoqaHanSans Regular 14
+				.col-3
+					small.rightSmall.subSmall input title / table text / btn text / mail form
+				.col-2
+					.body-2.fontB2 Body 2
+				.col-7
+					.fontB2 SpoqaHanSans Bold 12
+				.col-3
+					small.rightSmall.subSmall status counter / mail form link
+				.col-2
+					.body-3.fontB3 Body 3
+				.col-7
+					.fontB3 SpoqaHanSans Regular 12
+				.col-3
+					small.rightSmall.subSmall input active title / intance message / status / pagination
+				.col-2
+					.caption.fontC1 Caption
+				.col-7
+					.fontC1 SpoqaHanSans Regular 10
+				.col-3
+					small.rightSmall.subSmall Location / Footer
+
+
 	div.container.made Made by majac / TakHyun

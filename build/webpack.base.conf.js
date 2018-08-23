@@ -5,6 +5,7 @@ var config = require('../config')
 var utils = require('./utils')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
+var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -50,7 +51,7 @@ module.exports = {
         use: {
           loader: 'html-loader',
           options: {
-            minimize: false
+            minimize: true
           }
         }
       },
