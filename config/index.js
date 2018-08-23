@@ -1,12 +1,9 @@
 var path = require('path')
-// const webpack = require('webpack') // to access built-in plugins
-// const HtmlWebpackPlugin = require('html-webpack-plugin')
-// const { BaseHrefWebpackPlugin } = require('base-href-webpack-plugin')
 
 module.exports = {
   build: {
     env: require('./prod.env'),
-    // publicPath: '/osc-style/',
+    publicPath: '/osc-style/',
     index: path.resolve(__dirname, '../dist/index.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',

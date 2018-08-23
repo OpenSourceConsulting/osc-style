@@ -103,5 +103,17 @@ module.exports = {
       Util: 'exports-loader?Util!bootstrap/js/dist/util',
       Dropdown: 'exports-loader?Dropdown!bootstrap/js/dist/dropdown'
     })
+    // new HtmlWebpackPlugin({
+    //   template: require('html-webpack-template-pug'),
+    //   inject: false,
+    //   injectExtras: {
+    //     head: [
+    //       {
+    //         tag: 'base',
+    //         href: isDev ? config.dev.publicPath : config.build.publicPath
+    //       }
+    //     ]
+    //   }
+    // })
   ]
 }

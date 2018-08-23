@@ -23,10 +23,10 @@ var webpackConfig = merge(baseWebpackConfig, {
     chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: '!!pug-loader!src/views/shared/head.pug',
-      baseUrl: config.build.publicPath
-    }),
+    // new HtmlWebpackPlugin({
+    //   template: '!!pug-loader!src/views/shared/head.pug',
+    //   baseUrl: config.build.publicPath
+    // }),
     new webpack.DefinePlugin({
       'process.env': env
     }),
