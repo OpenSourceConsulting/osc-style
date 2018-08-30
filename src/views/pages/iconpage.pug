@@ -1,0 +1,34 @@
+extends ../layouts/pages
+block append head
+  block title
+    - var title='OSC-ICON'; // Page title
+
+block content
+  include ../components/header.pug
+  .container
+    .row
+      .col.title
+        h1.headerH1 ICON
+        small.headerSmall Last revision : 2018. 08. 30.
+
+  div 페이지 준비중...
+  section.sectionLayout
+    .container
+      h2 OS System Icon
+      - var iconArray = [{'key':'osc-icon-beos'}, {'key':'osc-icon-centos'}, {'key':'osc-icon-debian'}, {'key':'osc-icon-fedora'}, {'key':'osc-icon-freebsd'}, {'key':'osc-icon-mandriva'}, {'key':'osc-icon-os2'}, {'key':'osc-icon-redhat'}, {'key':'osc-icon-suse'}, {'key':'osc-icon-symbian'}, {'key':'osc-icon-ubuntu'}, {'key':'osc-icon-unix'}, {'key':'osc-icon-linux'}, {'key':'osc-icon-windows'}, {'key':'osc-icon-osx'}]
+        .row.rowLayout.osBoxHeight
+          each item, index in iconArray
+            div.iconBox
+              i( class = item.key )
+              div.className #{item.key}
+
+  section.sectionLayout.borderNone
+    .container
+      h2 Mobile Icon
+      - var iconArray = [{'key':'osc-icon-android'}, {'key':'osc-icon-ios'}]
+        .row.rowLayout.MosBoxHeight
+          each item, index in iconArray
+            div.iconBox
+              i( class = item.key )
+              div.className #{item.key}
+  div.container.made Made by majac / TakHyun
