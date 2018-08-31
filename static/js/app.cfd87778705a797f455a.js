@@ -1,2 +1,0 @@
-webpackJsonp([1],[function(n,t,o){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var e=o(1),a=(o.n(e),o(3)),i=(o.n(a),o(4));o.n(i),o(5)},function(n,t){},,function(n,t){},function(n,t){},function(n,t,o){"use strict";var e=o(6),a=o.n(e),i=document.getElementById("colorTab"),c=document.getElementById("fontTab"),l=function(){"/colorpage.html"===window.location.pathname?i.className+="active":"/fontpage.html"===window.location.pathname&&(c.className+="active")};window.onload=l,a.a.initHighlightingOnLoad()}],[0]);
-//# sourceMappingURL=app.cfd87778705a797f455a.js.map
