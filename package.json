@@ -1,6 +1,6 @@
 {
   "name": "osc-style",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "homepage": "https://tech.osci.kr/osc-style/",
   "description": "Open Source Consultion style",
   "keywords": [
@@ -23,7 +23,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node build/dev-server.js",
-    "deploy": "node build/build.js && gh-pages -d dist",
+    "deploy": "gh-pages -d example/dist",
     "build": "node build/build.js"
   },
   "author": "TakHyun-Kang <azx1054@gmail.com>",

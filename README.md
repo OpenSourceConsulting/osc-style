@@ -24,17 +24,20 @@ Import the file to your project and use the variables.
 
 **Example for Sass, SCSS**
 
-    @import 'path/osc-style';
+````css
+    /* color import */
+    @import 'path/osc-style/style_variables/osc-color';
+    /* font import*/
+    @import 'path/osc-style/style_variables/osc-font';
 
+    /* color */
     .body {
         background-color: $primary-600;
         color: $inProgress-500;
     }
 
-    a {
-        color: $secondary-800;
-
-        &:hover {
-            color: $secondary-50;
-        }
+    /* font */
+    * {
+        @extend .osc-font;
     }
+````

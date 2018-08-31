@@ -20,6 +20,24 @@ block content
             //- a( href = "colorpage.html#"+item.key class = "navColor " + item.key ) #{item.key}
             a( href = "colorpage.html#"+item.key class = "navColor " + item.key ) #{item.key}
 
+  section
+  .container
+    .row
+      .col-sm-12
+        h2 Default Usage
+        p 기본 적용법 입니다.
+        b Example for SCSS : 
+        .example
+          pre
+            code.css  @import 'path/osc-style/style_variables/osc-color';
+            code.css
+            code.css  .body {
+            code.css    background-color: $primary-600;
+            code.css    color: $inProgress;
+            code.css  }
+
+  <hr/>
+
   //- Surface
   section#Surface
     .container
