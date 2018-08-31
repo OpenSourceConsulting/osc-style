@@ -8,7 +8,7 @@ Using npm:
 
     $ npm i --save osc-style
 
-## Available Styles
+## Available Styles and Detailed usage
 
 https://tech.osci.kr/osc-style
 

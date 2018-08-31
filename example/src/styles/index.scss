@@ -1,5 +1,8 @@
 // Last revision : 2018. 08. 17.
 @import './variable';
+* {
+  @extend .osc-font;
+}
 body {
   .title {
     margin: 50px 0;
