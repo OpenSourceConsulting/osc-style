@@ -5,42 +5,53 @@ block append head
 
 block content
   include ../components/header.pug
-  .container
-    .row
-      .col.title
-        h1.headerH1 ICON
-        small.headerSmall Last revision : 2018. 08. 30.
+  section.title
+    .container
+      .row
+        .col
+          h2.headerH1 ICON
+
+  <hr/>
 
   section
-  .container
-    .row
-      .col-sm-12
-        h3 Default Usage
-        p 기본 적용법 입니다.
-        b Example for SCSS : 
-        .example
-          pre
-            code.css  페이지 준비중...
+    .container
+      .row
+        .col-sm-12
+          h3 Default Usage
+          b Example for SCSS : 
+          .example
+            pre
+              code.css  페이지 준비중...
 
   <hr/>
 
   section.sectionLayout
     .container
-      h2 OS System Icon
-      - var iconArray = [{'key':'osc-icon-beos'}, {'key':'osc-icon-centos'}, {'key':'osc-icon-debian'}, {'key':'osc-icon-fedora'}, {'key':'osc-icon-freebsd'}, {'key':'osc-icon-mandriva'}, {'key':'osc-icon-os2'}, {'key':'osc-icon-redhat'}, {'key':'osc-icon-suse'}, {'key':'osc-icon-symbian'}, {'key':'osc-icon-ubuntu'}, {'key':'osc-icon-unix'}, {'key':'osc-icon-linux'}, {'key':'osc-icon-windows'}, {'key':'osc-icon-osx'}]
-        .row.rowLayout.osBoxHeight
-          each item, index in iconArray
-            div.iconBox
-              i( class = item.key )
-              div.className #{item.key}
+      .row
+        .col-sm-12
+          h3 OS System Icon
+          .container
+            - var iconArray = [{'key':'osc-icon-beos'}, {'key':'osc-icon-centos'}, {'key':'osc-icon-debian'}, {'key':'osc-icon-fedora'}, {'key':'osc-icon-freebsd'}, {'key':'osc-icon-mandriva'}, {'key':'osc-icon-os2'}, {'key':'osc-icon-redhat'}, {'key':'osc-icon-suse'}, {'key':'osc-icon-symbian'}, {'key':'osc-icon-ubuntu'}, {'key':'osc-icon-unix'}, {'key':'osc-icon-linux'}, {'key':'osc-icon-windows'}, {'key':'osc-icon-osx'}]
+              .row.rowLayout
+                each item, index in iconArray
+                  div.iconCard
+                    span.iconBox
+                      i( class = item.key )
+                    input( type="text" value=item.key readonly class = "className" )
+
+  <hr/>
 
   section.sectionLayout.borderNone
     .container
-      h2 Mobile Icon
-      - var iconArray = [{'key':'osc-icon-android'}, {'key':'osc-icon-ios'}]
-        .row.rowLayout.MosBoxHeight
-          each item, index in iconArray
-            div.iconBox
-              i( class = item.key )
-              div.className #{item.key}
-  div.container.made Made by majac / TakHyun
+      .row
+        .col-sm-12
+          h3 Mobile Icon
+          - var iconArray = [{'key':'osc-icon-android'}, {'key':'osc-icon-ios'}]
+            .row.rowLayout
+              each item, index in iconArray
+                div.iconCard
+                  span.iconBox
+                    i( class = item.key )
+                  input( type="text" value=item.key readonly class = "className" )
+
+  include ../components/footer.pug

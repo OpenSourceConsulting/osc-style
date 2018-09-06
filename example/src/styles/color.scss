@@ -38,7 +38,6 @@
   line-height: 2;
 }
 
-;
 .navColorBox {
   height: 25px;
   text-align: center;
@@ -48,7 +47,7 @@
     content: "";
     position: absolute;
     border: 1px solid $secondary-500;
-    width: 100%;
+    width: 96.5%;
   }
   .navColor {
     padding: 20px 0;
@@ -108,36 +107,15 @@
 }
 
 section {
-  &#Surface {
-    .row {
-      @include rowLayout;
-    }
-  }
-  &#Primary {
-    .row {
-      @include rowLayout;
-    }
-  }
-  &#Secondary {
-    .row {
-      @include rowLayout;
-    }
-  }
-  &#EtcColor {
-    .row {
-      @include rowLayout;
-    }
-  }
-  &#Crediential {
-    .row {
-      @include rowLayout;
-    }
-  }
-}
-
-section {
   padding: 25px 0;
+  &.rowLayout {
+    .row {
+      @include rowLayout;
+    }
+  }
   .row {
+    width: 100% !important;
+    margin: auto !important;
     // Surface
     .surface {
       background-color: $surface;
@@ -173,16 +151,23 @@ section {
     .primary {
       background-color: $primary;
       color: $fontColorBlack;
+      input {
+        color: #FFFFFF;
+      }
     }
     .primary900 {
       background-color: $primary-900;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
     .primary800 {
       background-color: $primary-800;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
     .primary700 {
       background-color: $primary-700;
@@ -274,32 +259,44 @@ section {
     } // Secondary
     .secondary {
       background-color: $secondary;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
     .secondary900 {
       background-color: $secondary-900;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
     .secondary800 {
       background-color: $secondary-800;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
     .secondary700 {
       background-color: $secondary-700;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
     .secondary600 {
       background-color: $secondary-600;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
     .secondary500 {
       background-color: $secondary-500;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
     .secondary400 {
       background-color: $secondary-400;
@@ -376,110 +373,152 @@ section {
       color: #FFFFFF;
       opacity: .38;
     } // Error
-    .error_200 {
+    .error-200 {
       background-color: $error-200;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
-    .error_500 {
+    .error-500 {
       background-color: $error-500;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
-    .error_800 {
+    .error-800 {
       background-color: $error-800;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     } // In Progress
-    .inProgress_200 {
+    .inProgress-200 {
       background-color: $inProgress-200;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
-    .inProgress_500 {
+    .inProgress-500 {
       background-color: $inProgress-500;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
-    .inProgress_800 {
+    .inProgress-800 {
       background-color: $inProgress-800;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     } // Completed
-    .completed_200 {
+    .completed-200 {
       background-color: $completed-200;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
-    .completed_500 {
+    .completed-500 {
       background-color: $completed-500;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
-    .completed_800 {
+    .completed-800 {
       background-color: $completed-800;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     } // Reserved
-    .reserved_200 {
+    .reserved-200 {
       background-color: $reserved-200;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
-    .reserved_500 {
+    .reserved-500 {
       background-color: $reserved-500;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
-    .reserved_800 {
+    .reserved-800 {
       background-color: $reserved-800;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     } // Canceled
-    .canceled_200 {
+    .canceled-200 {
       background-color: $canceled-200;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
-    .canceled_500 {
+    .canceled-500 {
       background-color: $canceled-500;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
-    .canceled_800 {
+    .canceled-800 {
       background-color: $canceled-800;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     } // Crediential
-    .crediential_1 {
+    .crediential-1 {
       background-color: $crediential-1;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
-    .crediential_2 {
+    .crediential-2 {
       background-color: $crediential-2;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
-    .crediential_3 {
+    .crediential-3 {
       background-color: $crediential-3;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
-    .crediential_4 {
+    .crediential-4 {
       background-color: $crediential-4;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
-    .crediential_5 {
+    .crediential-5 {
       background-color: $crediential-5;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
-    .crediential_6 {
+    .crediential-6 {
       background-color: $crediential-6;
       height: 50px;
-      color: #FFFFFF;
+      input {
+        color: #FFFFFF;
+      }
     }
   }
 }
@@ -533,7 +572,23 @@ section {
   @include textLower;
 }
 
-.colorTitle {
-  padding: 30px 0;
-  color: $fontColorBlack;
+.ISNameLong {
+  width: 108px !important;
+  @include inputStyle;
+}
+.ISName {
+  width: 60px !important;
+  @include inputStyle;
+}
+.ISCode {
+  width: 67px !important;
+  position: relative !important;
+  right: 10px;
+  @include inputStyle;
+}
+.ISCode2 {
+  position: relative !important;
+  right: 5px;
+  width: 67px !important;
+  @include inputStyle;
 }

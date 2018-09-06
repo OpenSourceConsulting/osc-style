@@ -1,0 +1,28 @@
+.Footer {
+  background-color: $surface;
+  margin-top: 30px;
+  .FWidth {
+    margin: auto;
+  }
+  .line {
+    display: inline-block;
+    padding-top: 30px;
+    &:after {
+      content: "|";
+      color: $secondary-700;
+      margin: 10px;
+    }
+  }
+  .link {
+    font-size: 14px;
+    color: $secondary-700;
+    display: inline-block;
+  }
+  .MBottom {
+    margin-bottom: 30px;
+    .MTop {
+      margin-top: 30px;
+      color: $secondary-500;
+    }
+  }
+}

@@ -1,26 +1,78 @@
 extends ../layouts/pages
 block append head
-	block title
-		- var title='OSC-STYLE';
+  block title
+    - var title='OSC-STYLE';
 
 block content
-	include ../components/header.pug
-	section
-		.container
-			.row
-				.col-12
-					h1 OpenSourceConsulting UI kit
-					small Last revision : 2018. 08. 13.
-	section
-		.container
-			.row
-				.col-12
-					p (주)오픈소스컨설팅에서 자체 웹앱 개발시 사용되는 기본적인 디자인 자료입니다. 오픈 소스로 공개되었으며 자유롭게 사용하셔도 됩니다. 보다 자세한 내용은 아래 본문을 확인해주세요.
-				.col-12
-					ul
-						li 
-							a(href="https://www.npmjs.com/package/osc-style") NPM
-							span  패키지로 배포되어 있으며 손쉽게 설치가 가능하고 헤당 링크로 이동해 설치 방법을 확인할 수 있습니다.
-						li
-							a(href="https://spoqa.github.io/spoqa-han-sans/en-US/" target="_blank") 스포카 한 산스(SpoqaHanSans) 
-							span 폰트를 기본으로 사용합니다.
+  include ../components/header.pug
+  section.title
+    .container
+      .row
+        .col-12
+          h2 OpenSourceConsulting UI kit
+          small Version : 1.1.1
+
+  <hr/>
+
+  section
+    .container
+      .row
+        .col-12
+          p (주)오픈소스컨설팅에서 자체 웹앱 개발시 사용되는 기본적인 디자인 자료입니다. 오픈 소스로 공개되었으며 자유롭게 사용하셔도 됩니다. 보다 자세한 내용은 아래 본문을 확인해주세요.
+        .col-12
+          ul
+            li 
+              a(href="https://www.npmjs.com/package/osc-style") NPM
+              span  패키지로 배포되어 있으며 손쉽게 설치가 가능하고 헤당 링크로 이동해 설치 방법을 확인할 수 있습니다.
+            li
+              a(href="https://spoqa.github.io/spoqa-han-sans/en-US/" target="_blank") 스포카 한 산스(SpoqaHanSans) 
+              span 폰트를 기본으로 사용합니다.
+            li OSC-Style의 디렉토리 구조는 이렇게 되어 있습니다.
+              div(class="treeview" data-role="treeview")
+                ul
+                  li
+                    span(class="leaf dirIcon") osc-style
+                    ul
+                      li
+                        span(class="leaf dirIcon") build
+                      li
+                        span(class="leaf dirIcon") config
+                      li
+                        span(class="leaf dirIcon") example
+                      li
+                        span(class="leaf dirIcon") node_modules
+                      li
+                        span(class="leaf dirIcon") style_variables
+                        ul
+                          li
+                            span(class="leaf sassIcon") _osc-color.scss
+                          li
+                            span(class="leaf sassIcon") _osc-font.scss
+                      li
+                        span(class="leaf dirIcon") etc...
+            li osc-style안의 style_variables폴더의 파일들을 import해서 사용하면 됩니다.
+
+  <hr/>
+
+  section
+    .container
+      .row
+        .col-sm-12
+          h3 Usage
+          b Example for SCSS : 
+          .example
+            pre
+              code.css  @import 'path/osc-style/style_variables/osc-color';
+              code.css  @import 'path/osc-style/style_variables/osc-font';
+              code.css
+              code.css  &#42; {
+              code.css    @extend .osc-font;
+              code.css  }
+              code.css
+              code.css  h1 {
+              code.css    color: $primary;
+              code.css  }
+
+  include ../components/footer.pug
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>

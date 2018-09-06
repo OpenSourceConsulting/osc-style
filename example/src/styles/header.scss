@@ -1,12 +1,14 @@
 .Header {
-  background-color: rgba(255,255,255,0.6);
-  box-shadow: 0px 1px 10px 1px #858482;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px -2px $secondary-300;
   position: sticky;
   top: 0;
   z-index: 5;
   height: 50px;
   .container {
-    .row {
+    .HWidth {
+      width: 97.5%;
+      margin: auto;
       .col {
         padding: 0;
         .logoBox {
@@ -16,7 +18,7 @@
             vertical-align: middle;
             font-size: 23px;
             font-weight: bold;
-            color: $pageMainColor;
+            color: $primary;
             text-decoration: none;
             height: 50px;
           }
@@ -30,25 +32,28 @@
             margin-left: 35px;
             a {
               text-decoration: none;
-              color: $secondary-300;
+              color: $secondary-800;
               font-size: 18px;
               display: table-cell;
               text-align: center;
-              transition: .3s;
+              transition: .2s;
               vertical-align: middle;
               height: 50px;
               &:hover {
                 opacity: .7;
                 &::after {
                   content: "";
-                  border: 1px solid $secondary-300;
-                  display: block;
+                  border: 1px solid $secondary-800;
+                  position: absolute;
+                  left: 0;
+                  right: 0;
+                  top: 35px;
+                  opacity: .7;
                 }
               }
               &:active {
                 opacity: .5;
                 transition: none;
-                font-weight: bold;
               }
             }
           }
@@ -63,6 +68,13 @@
 }
 
 .active {
-  color: #DC572D !important;
-  font-weight: bold;
+  &::after {
+    content: "";
+    border: 1px solid $secondary-800;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35px;
+    opacity: .7;
+  }
 }

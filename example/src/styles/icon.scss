@@ -1,9 +1,8 @@
 .sectionLayout {
-  border-bottom: 2px solid #E3E5EA;
   .container {
     .rowLayout {
       text-align: center;
-      flex-direction: column;
+      flex-direction: row;
       position: relative;
       margin: 0 auto;
       .colFont {
@@ -12,15 +11,24 @@
           padding: 30px;
         }
       }
-      .iconBox {
-        padding: 30px;
+      .iconCard {
         display: inline-block;
-        margin: 15px;
-        border-radius: 30px;
-        box-shadow: 5px 5px 15px 3px #6B6A69;
+        margin: 10px auto;
+        border-radius: 10px;
+        border: 1px solid #E3E5EA;
+        overflow: hidden;
+        height: 50px;
         .className {
-          width: 75px;
-          margin: 0 auto;
+          position: relative;
+          top: -5px;
+          width: 135px !important;
+          @include inputStyle;
+        }
+        .iconBox {
+          width: 50px;
+          display: inline-block;
+          position: relative;
+          top: 6px;
         }
       }
 
@@ -36,12 +44,6 @@
       //   background-size: contain;
       //   background-repeat: no-repeat;
       // }
-    }
-    .osBoxHeight {
-      height: 540px;
-    }
-    .MosBoxHeight {
-      height: 180px;
     }
   }
 }
