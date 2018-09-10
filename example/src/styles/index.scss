@@ -1,0 +1,88 @@
+// Last revision : 2018. 08. 17.
+@import './variable';
+* {
+  @extend .osc-font;
+}
+body {
+  .title {
+    margin: 50px 0;
+    padding: 0;
+    .headerH1 {
+      color: $fontColorBlack;
+    }
+    .headerSmall {
+      color: $fontColorBlack;
+      font-size: 10px;
+    }
+  }
+  .made {
+    margin-bottom: 50px;
+  }
+}
+
+.example {
+  background-color: #fafafa;
+  padding: 1.5rem;
+  border-radius: 5px;
+  margin: 1.25rem 0;
+  border: 1px solid #e6e6e6;
+}
+
+pre {
+  margin-bottom: 0 !important;
+}
+
+.treeview {
+  width: 300px;
+  border: 1px solid $dark;
+  border-radius: 10px;
+  .dirIcon {
+    &::before {
+      content: "";
+      background-image: url(../../static/img/dirIcon.png);
+      background-size: contain;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      position: relative;
+      top: 5px;
+      margin-right: 5px;
+    }
+  }
+  .sassIcon {
+    &::before {
+      content: "";
+      background-image: url(../../static/img/sassIcon.png);
+      background-size: 40px;
+      background-position: center;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      position: relative;
+      top: 5px;
+      margin-right: 5px;
+    }
+  }
+}
+.node-toggle {
+  top: 3px !important;
+}
+@mixin inputStyle {
+  box-shadow: none !important;
+  height: 16px !important;
+  padding: 0 !important;
+  border: none !important;
+  cursor: pointer;
+  font-size: 14px !important;
+  display: inline-block !important;
+  background-color: transparent !important;
+  &:hover {
+    font-weight: bold;
+  }
+}
+
+@import './color';
+@import './font';
+@import './icon';
+@import './header';
+@import './footer';

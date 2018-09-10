@@ -1,0 +1,57 @@
+extends ../layouts/pages
+block append head
+  block title
+    - var title='OSC-ICON'; // Page title
+
+block content
+  include ../components/header.pug
+  section.title
+    .container
+      .row
+        .col
+          h2.headerH1 ICON
+
+  <hr/>
+
+  section
+    .container
+      .row
+        .col-sm-12
+          h3 Default Usage
+          b Example for SCSS : 
+          .example
+            pre
+              code.css  페이지 준비중...
+
+  <hr/>
+
+  section.sectionLayout
+    .container
+      .row
+        .col-sm-12
+          h3 OS System Icon
+          .container
+            - var iconArray = [{'key':'osc-icon-beos'}, {'key':'osc-icon-centos'}, {'key':'osc-icon-debian'}, {'key':'osc-icon-fedora'}, {'key':'osc-icon-freebsd'}, {'key':'osc-icon-mandriva'}, {'key':'osc-icon-os2'}, {'key':'osc-icon-redhat'}, {'key':'osc-icon-suse'}, {'key':'osc-icon-symbian'}, {'key':'osc-icon-ubuntu'}, {'key':'osc-icon-unix'}, {'key':'osc-icon-linux'}, {'key':'osc-icon-windows'}, {'key':'osc-icon-osx'}]
+              .row.rowLayout
+                each item, index in iconArray
+                  div.iconCard
+                    span.iconBox
+                      i( class = item.key )
+                    input( type="text" value=item.key readonly class = "className" )
+
+  <hr/>
+
+  section.sectionLayout.borderNone
+    .container
+      .row
+        .col-sm-12
+          h3 Mobile Icon
+          - var iconArray = [{'key':'osc-icon-android'}, {'key':'osc-icon-ios'}]
+            .row.rowLayout
+              each item, index in iconArray
+                div.iconCard
+                  span.iconBox
+                    i( class = item.key )
+                  input( type="text" value=item.key readonly class = "className" )
+
+  include ../components/footer.pug

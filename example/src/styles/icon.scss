@@ -1,0 +1,52 @@
+.sectionLayout {
+  .container {
+    .rowLayout {
+      text-align: center;
+      flex-direction: row;
+      position: relative;
+      margin: 0 auto;
+      .colFont {
+        font-size: 20px;
+        h2 {
+          padding: 30px;
+        }
+      }
+      .iconCard {
+        display: inline-block;
+        margin: 10px auto;
+        border-radius: 10px;
+        border: 1px solid #E3E5EA;
+        overflow: hidden;
+        height: 50px;
+        .className {
+          position: relative;
+          top: -5px;
+          width: 135px !important;
+          @include inputStyle;
+        }
+        .iconBox {
+          width: 50px;
+          display: inline-block;
+          position: relative;
+          top: 6px;
+        }
+      }
+
+      // .centos {
+      //   @include osc-icon('centos');
+      // }
+      // .debian {
+      //   display: inline-block;
+      //   width: 35px;
+      //   height: 35px;
+      //   background-image: url(osc-icon('debian'));
+      //   background-position: center;
+      //   background-size: contain;
+      //   background-repeat: no-repeat;
+      // }
+    }
+  }
+}
+.borderNone {
+  border: none;
+}
