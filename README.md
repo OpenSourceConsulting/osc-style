@@ -29,6 +29,8 @@ Import the file to your project and use the variables.
     @import 'path/osc-style/style_variables/osc-color';
     /* font import*/
     @import 'path/osc-style/style_variables/osc-font';
+    /* icon import*/
+    @import 'path/osc-style/style_variables/osc-icon';
 
     /* color */
     .body {
@@ -40,4 +42,9 @@ Import the file to your project and use the variables.
     * {
         @extend .osc-font;
     }
+````
+**Example for HTML**
+
+````html
+    <i class="osc-icon-bell-fill"></i>
 ````

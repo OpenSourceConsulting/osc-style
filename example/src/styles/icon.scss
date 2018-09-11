@@ -1,3 +1,13 @@
+@mixin iconBox {
+  width: 50px;
+  display: inline-block;
+  position: relative;
+}
+@mixin className {
+  position: relative;
+  @include inputStyle;
+}
+
 .sectionLayout {
   .container {
     .rowLayout {
@@ -18,16 +28,25 @@
         border: 1px solid #E3E5EA;
         overflow: hidden;
         height: 50px;
-        .className {
-          position: relative;
+        .fontStyle {
+          font-size: 25px;
+        }
+        .FontClassName {
+          @include className;
+          top: 6px;
+          width: 170px !important;
+        }
+        .fontIconBox {
+          @include iconBox;
+          top: 12px;
+        }
+        .OSclassName {
+          @include className;
           top: -5px;
           width: 135px !important;
-          @include inputStyle;
         }
-        .iconBox {
-          width: 50px;
-          display: inline-block;
-          position: relative;
+        .OSiconBox {
+          @include iconBox;
           top: 6px;
         }
       }

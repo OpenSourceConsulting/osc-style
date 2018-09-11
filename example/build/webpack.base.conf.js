@@ -25,11 +25,13 @@ module.exports = {
       : config.build.assetsPublicPath
   },
   resolve: {
+    modules: ['node_modules'],
     extensions: ['.js', '.json'],
     alias: {
-      '@': resolve('src')
+      '@': resolve('src'),
     }
   },
+  devtool:'source-map',
   module: {
     rules: [
       {
@@ -68,7 +70,9 @@ module.exports = {
         loader: 'url-loader',
         options: {
           limit: 10000,
-          name: utils.assetsPath('img/[name].[hash:7].[ext]')
+          // fallback: 'file-loader',
+          name: utils.assetsPath('img/[name].[hash:7].[ext]'),
+          // publicPath: "/static/img/"
         }
       },
       {
@@ -76,8 +80,21 @@ module.exports = {
         loader: 'url-loader',
         options: {
           limit: 10000,
-          name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
+          name: utils.assetsPath('fonts/[name].[hash:7].[ext]'),
+          publicPath: "/node_modules/"
         }
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              limit: 10000,
+              name: utils.assetsPath('img/[name].[hash:7].[ext]')
+            }
+          }
+        ]
       }
     ]
   },

@@ -10,7 +10,7 @@ block content
       .row
         .col-12
           h2 OpenSourceConsulting UI kit
-          small Version : 1.1.1
+          small Version : 1.1.2
 
   <hr/>
 
@@ -48,6 +48,8 @@ block content
                             span(class="leaf sassIcon") _osc-color.scss
                           li
                             span(class="leaf sassIcon") _osc-font.scss
+                          li
+                            span(class="leaf sassIcon") _osc-icon.scss
                       li
                         span(class="leaf dirIcon") etc...
             li osc-style안의 style_variables폴더의 파일들을 import해서 사용하면 됩니다.
@@ -64,6 +66,7 @@ block content
             pre
               code.css  @import 'path/osc-style/style_variables/osc-color';
               code.css  @import 'path/osc-style/style_variables/osc-font';
+              code.css  @import 'path/osc-style/style_variables/osc-icon';
               code.css
               code.css  &#42; {
               code.css    @extend .osc-font;
@@ -72,6 +75,10 @@ block content
               code.css  h1 {
               code.css    color: $primary;
               code.css  }
+          b Example for Icon in HTML : 
+          .example
+            pre
+              code.html  &lt;i class="osc-icon-bell-fill"&gt;&lt;/i&gt;
 
   include ../components/footer.pug
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

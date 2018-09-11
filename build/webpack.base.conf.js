@@ -28,7 +28,8 @@ module.exports = {
     extensions: ['.js', '.json'],
     alias: {
       '@': resolve('src')
-    }
+    },
+    modules: ['node_modules']
   },
   module: {
     rules: [
