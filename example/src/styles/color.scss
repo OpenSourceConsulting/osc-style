@@ -544,12 +544,14 @@ section {
   padding-top: 100px;
 }
 
-.primaryRowHeight {
+.primaryRowHeight,
+.primaryRowHeight2 {
   height: 350px;
   padding-top: 100px;
 }
 
-.secondaryRowHeight {
+.secondaryRowHeight,
+.secondaryRowHeight2 {
   height: 350px;
   padding-top: 100px;
 }
@@ -591,4 +593,42 @@ section {
   right: 5px;
   width: 67px !important;
   @include inputStyle;
+}
+
+@media only screen and (max-width: 1200px) {
+  .etcColorRowHeight {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .navColorWrap {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .primaryRowHeight2 {
+    padding: 0;
+    height: 522px;
+  }
+  .primaryEp {
+    position: relative;
+  }
+  .primaryBlackTEm,
+  .primaryWhiteTEm {
+    top: 0;
+  }
+  .secondaryRowHeight2 {
+    padding: 0;
+    height: 522px;
+  }
+  .secondaryEp {
+    position: relative;
+  }
+  .secondaryBlackTEm,
+  .secondaryWhiteTEm {
+    top: 0;
+  }
+  .etcColorRowHeight {
+    height: 450px;
+  }
 }

@@ -70,9 +70,9 @@ module.exports = {
         loader: 'url-loader',
         options: {
           limit: 10000,
-          // fallback: 'file-loader',
+          fallback: 'file-loader',
           name: utils.assetsPath('img/[name].[hash:7].[ext]'),
-          // publicPath: "/static/img/"
+          publicPath: "/static/img/"
         }
       },
       {
@@ -83,18 +83,6 @@ module.exports = {
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]'),
           publicPath: "/node_modules/"
         }
-      },
-      {
-        test: /\.(png|jpg|gif)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              limit: 10000,
-              name: utils.assetsPath('img/[name].[hash:7].[ext]')
-            }
-          }
-        ]
       }
     ]
   },

@@ -14,7 +14,7 @@ block content
   <hr>
 
   //- Color Navigator
-  section
+  section.navColorWrap
     .container
       - var navColor = [{'key':'Surface'}, {'key':'Primary'}, {'key':'Secondary'}, {'key':'EtcColor'}, {'key':'Crediential'}]
         .row.navColorBox
@@ -82,7 +82,7 @@ block content
                   div( class = 'primary' + item.key  )
                     input( type="text" value=item.key readonly class = "ISName" ).name
                     input( type="text" value=item.color readonly class = "ISCode" ).code
-            .row.primaryRowHeight
+            .row.primaryRowHeight2
               each item, index in primaryEp
                 if index === 0
                   div( class = 'titleColorLayout primary' + item.key )
@@ -119,7 +119,7 @@ block content
                   div( class = 'secondary' + item.key  )
                     input( type="text" value=item.key readonly class = "ISName" ).name
                     input( type="text" value=item.color readonly class = "ISCode" ).code
-            .row.secondaryRowHeight
+            .row.secondaryRowHeight2
               each item, index in secondaryEp
                 if index === 0
                   div( class = 'titleColorLayout secondary' + item.key )
