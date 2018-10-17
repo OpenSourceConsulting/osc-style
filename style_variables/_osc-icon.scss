@@ -217,62 +217,63 @@ date: 2018. 10. 04
 }
 
 // OS-SYSTEM-ICON-----------------------------------------------
-// $imgSRC: 'https://raw.githubusercontent.com/TakHyun-Kang/os-system-icon/master/src/imgs/';
+$imgSRC: 'https://raw.githubusercontent.com/TakHyun-Kang/os-Icon-img/master/img/';
 
-// $osIconList: (
-//   'beos': $imgSRC + 'beOS.png',
-//   'centos': $imgSRC + 'centos.png',
-//   'debian': $imgSRC + 'debian.png',
-//   'fedora': $imgSRC + 'fedora.png',
-//   'freebsd': $imgSRC + 'freebsd.png',
-//   'mandriva': $imgSRC + 'mandriva.png',
-//   'os2': $imgSRC + 'os2.png',
-//   'redhat': $imgSRC + 'redhat.png',
-//   'suse': $imgSRC + 'suse.png',
-//   'symbian': $imgSRC + 'symbian.png',
-//   'ubuntu': $imgSRC + 'ubuntu.png',
-//   'unix': $imgSRC + 'unix.png',
-//   'linux': $imgSRC + 'linux.png',
-//   'windows': $imgSRC + 'windows.png',
-//   'android': $imgSRC + 'android.png',
-//   'ios': $imgSRC + 'ios.png',
-//   'osx': $imgSRC + 'osx.png',
-//   'aix': $imgSRC + 'aix.png',
-// );
+$osIconList: (
+  'beos': $imgSRC + 'beOS.png',
+  'centos': $imgSRC + 'centos.png',
+  'debian': $imgSRC + 'debian.png',
+  'fedora': $imgSRC + 'fedora.png',
+  'freebsd': $imgSRC + 'freebsd.png',
+  'mandriva': $imgSRC + 'mandriva.png',
+  'os2': $imgSRC + 'os2.png',
+  'redhat': $imgSRC + 'redhat.png',
+  'suse': $imgSRC + 'suse.png',
+  'symbian': $imgSRC + 'symbian.png',
+  'ubuntu': $imgSRC + 'ubuntu.png',
+  'unix': $imgSRC + 'unix.png',
+  'linux': $imgSRC + 'linux.png',
+  'windows': $imgSRC + 'windows.png',
+  'android': $imgSRC + 'android.png',
+  'ios': $imgSRC + 'ios.png',
+  'osx': $imgSRC + 'osx.png',
+  'aix': $imgSRC + 'aix.png',
+  'aws': $imgSRC + 'aws.png',
+);
 
-// // OS-icon 함수로 사용
-// @function os-icon($name) {
-//   @each $item, $i in $osIconList {
-//     @if $item == $name {
-//       @return $i
-//     }
-//   }
-// };
+// OS-icon 함수로 사용
+@function os-icon($name) {
+  @each $item, $i in $osIconList {
+    @if $item == $name {
+      @return $i
+    }
+  }
+};
 
-// // OS-icon @include로 사용
-// @mixin os-icon($name) {
-//   display: inline-block;
-//   width: 35px;
-//   height: 35px;
-//   @each $item, $i in $osIconList {
-//     @if $name == $item {
-//       background-image: url($i);
-//     }
-//   };
-//   background-position: center;
-//   background-size: contain;
-//   background-repeat: no-repeat;
-// };
+// OS-icon @include로 사용
+@mixin os-icon($name) {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  @each $item, $i in $osIconList {
+    @if $name == $item {
+      background-image: url($i);
+    }
+  };
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+};
 
-// // OS-icon class로 사용
-// @each $item, $i in $osIconList {
-//   &.osc-icon-#{$item} {
-//     display: inline-block;
-//     width: 35px;
-//     height: 35px;
-//     background-image: url(#{$i});
-//     background-position: center;
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//   }
-// }
+// OS-icon class로 사용
+@each $item, $i in $osIconList {
+  &.osc-icon-#{$item} {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url(#{$i});
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

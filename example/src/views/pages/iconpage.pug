@@ -44,35 +44,36 @@ block content
                       i( class = item.key ).fontStyle
                     input( type="text" value=item.key readonly class = "FontClassName" )
 
-  //- <hr/>
+  <hr/>
 
-  //- section.sectionLayout
-  //-   .container
-  //-     .row
-  //-       .col-sm-12
-  //-         h3 OS System Icon
-  //-         .container
-  //-           - var iconArray = [{key:'osc-icon-beos'}, {key:'osc-icon-centos'}, {key:'osc-icon-debian'}, {key:'osc-icon-fedora'}, {key:'osc-icon-freebsd'}, {key:'osc-icon-mandriva'}, {key:'osc-icon-os2'}, {key:'osc-icon-redhat'}, {key:'osc-icon-suse'}, {key:'osc-icon-symbian'}, {key:'osc-icon-ubuntu'}, {key:'osc-icon-unix'}, {key:'osc-icon-linux'}, {key:'osc-icon-windows'}, {key:'osc-icon-osx'}, {key:'osc-icon-aix'}]
-  //-             .row.rowLayout
-  //-               each item, index in iconArray
-  //-                 div.iconCard
-  //-                   span.OSiconBox
-  //-                     i( class = item.key )
-  //-                   input( type="text" value=item.key readonly class = "OSclassName" )
+  section.sectionLayout
+    .container
+      .row
+        .col-sm-12
+          h3 OS System Icon
+          .container.iconContainer
+            - var iconArray = [{key:'osc-icon-beos'}, {key:'osc-icon-centos'}, {key:'osc-icon-debian'}, {key:'osc-icon-fedora'}, {key:'osc-icon-freebsd'}, {key:'osc-icon-mandriva'}, {key:'osc-icon-os2'}, {key:'osc-icon-redhat'}, {key:'osc-icon-suse'}, {key:'osc-icon-symbian'}, {key:'osc-icon-ubuntu'}, {key:'osc-icon-unix'}, {key:'osc-icon-linux'}, {key:'osc-icon-windows'}, {key:'osc-icon-osx'}, {key:'osc-icon-aix'}, {key:'osc-icon-aws'}]
+              .row.rowLayout
+                each item, index in iconArray
+                  div.iconCard
+                    span.OSiconBox
+                      i( class = item.key )
+                    input( type="text" value=item.key readonly class = "OSclassName" )
 
-  //- <hr/>
+  <hr/>
 
-  //- section.sectionLayout.borderNone
-  //-   .container
-  //-     .row
-  //-       .col-sm-12
-  //-         h3 Mobile Icon
-  //-         - var iconArray = [{key:'osc-icon-android'}, {key:'osc-icon-ios'}]
-  //-           .row.rowLayout
-  //-             each item, index in iconArray
-  //-               div.iconCard
-  //-                 span.OSiconBox
-  //-                   i( class = item.key )
-  //-                 input( type="text" value=item.key readonly class = "OSclassName" )
+  section.sectionLayout.borderNone
+    .container
+      .row
+        .col-sm-12
+          h3 Mobile Icon
+          .container.iconContainer
+            - var iconArray = [{key:'osc-icon-android'}, {key:'osc-icon-ios'}]
+              .row.rowLayout
+                each item, index in iconArray
+                  div.iconCard
+                    span.OSiconBox
+                      i( class = item.key )
+                    input( type="text" value=item.key readonly class = "OSclassName" )
 
   include ../components/footer.pug

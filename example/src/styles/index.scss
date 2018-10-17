@@ -1,7 +1,7 @@
 // Last revision : 2018. 08. 17.
 @import './variable';
-* {
-  @extend .osc-font;
+body {
+  @extend .font-spoqa-han-sans;
 }
 body {
   .title {
