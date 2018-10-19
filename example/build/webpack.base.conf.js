@@ -80,8 +80,8 @@ module.exports = {
         loader: 'url-loader',
         options: {
           limit: 10000,
-          name: utils.assetsPath('fonts/[name].[hash:7].[ext]'),
-          publicPath: "/node_modules/"
+          // name: utils.assetsPath('fonts/[name].[hash:7].[ext]'),
+          // publicPath: "/node_modules/"
         }
       }
     ]

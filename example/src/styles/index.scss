@@ -1,7 +1,8 @@
 // Last revision : 2018. 08. 17.
 @import './variable';
 body {
-  @extend .font-spoqa-han-sans;
+  // @extend .font-spoqa-han-sans;
+  @extend .font-noto-sans-kr;
 }
 body {
   .title {
