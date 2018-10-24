@@ -42,6 +42,7 @@ Import the file to your project and use the variables.
     * {
         @extend .font-spoqa-han-sans;
         @extend .font-noto-sans-kr;
+        @extend .font-roboto;
     }
 ````
 **Example for HTML**

@@ -1,7 +1,7 @@
 /*
 OSC - FONT
-v 1.2.0
-date: 2018. 10. 19
+v 1.2.1
+date: 2018. 10. 24
 */
 
 // @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
@@ -112,12 +112,71 @@ date: 2018. 10. 19
   url('~osc-style/style_variables/fonts/NotoSansKR-Thin.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: local('Roboto'), local('Roboto-Regular'),
+  url('~osc-style/style_variables/fonts/Roboto-Regular.woff2') format('woff2'),
+  url('~osc-style/style_variables/fonts/Roboto-Regular.woff') format('woff'),
+  url('~osc-style/style_variables/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: local('Roboto'), local('Roboto-Bold'),
+  url('~osc-style/style_variables/fonts/Roboto-Bold.woff2') format('woff2'),
+  url('~osc-style/style_variables/fonts/Roboto-Bold.woff') format('woff'),
+  url('~osc-style/style_variables/fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: block;
+  src: local('Roboto'), local('Roboto-Light'),
+  url('~osc-style/style_variables/fonts/Roboto-Light.woff2') format('woff2'),
+  url('~osc-style/style_variables/fonts/Roboto-Light.woff') format('woff'),
+  url('~osc-style/style_variables/fonts/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src: local('Roboto'), local('Roboto-Medium'),
+  url('~osc-style/style_variables/fonts/Roboto-Medium.woff2') format('woff2'),
+  url('~osc-style/style_variables/fonts/Roboto-Medium.woff') format('woff'),
+  url('~osc-style/style_variables/fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  font-display: block;
+  src: local('Roboto'), local('Roboto-Thin'),
+  url('~osc-style/style_variables/fonts/Roboto-Thin.woff2') format('woff2'),
+  url('~osc-style/style_variables/fonts/Roboto-Thin.woff') format('woff'),
+  url('~osc-style/style_variables/fonts/Roboto-Thin.ttf') format('truetype');
+}
+
 .font-spoqa-han-sans {
   font-family: 'Spoqa Han Sans', 'Sans-serif';
 }
 
 .font-noto-sans-kr {
   font-family: 'Noto Sans KR', Sans-serif;
+}
+
+.font-roboto {
+  font-family: 'Roboto', Sans-serif;
 }
 
 h1 {
