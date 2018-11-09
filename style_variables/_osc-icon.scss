@@ -1,7 +1,7 @@
 /*
 OSC - ICON
-v 1.1.4
-date: 2018. 10. 04
+v 1.2.2
+date: 2018. 11. 09
 */
 
 @charset 'utf-8';
@@ -35,6 +35,16 @@ date: 2018. 10. 04
   -moz-osx-font-smoothing: grayscale;
 }
 
+.osc-icon-tree-minus {
+  &:before {
+    content: $osc-icon-tree-minus; 
+  }
+}
+.osc-icon-tree-plus {
+  &:before {
+    content: $osc-icon-tree-plus; 
+  }
+}
 .osc-icon-arrow1-down {
   &:before {
     content: $osc-icon-arrow1-down; 

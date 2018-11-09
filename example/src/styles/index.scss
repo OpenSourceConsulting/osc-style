@@ -1,11 +1,13 @@
 // Last revision : 2018. 10. 24.
 @import './variable';
+
 body {
   // @extend .font-spoqa-han-sans;
   @extend .font-noto-sans-kr;
   // @extend .font-roboto;
-}
-body {
+
+  min-width: 475px;
+  overflow: auto;
   .title {
     margin: 50px 0;
     padding: 0;
